@@ -1,0 +1,39 @@
+
+.main{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 37%;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    display:inline-block;
+}
+
+table{
+    padding:30px;
+    border-spacing: 20px;
+}
+
+.submit{
+    width: 220px;
+    height:25px;
+    margin-bottom: 50px;
+}
+
+.submit:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.inp1, .inp2{
+    cursor: pointer;
+}
+
+table tr{
+    margin-top: 15px;
+}
+
+h3{
+    text-align: center;
+    margin-right:75px;
+}
