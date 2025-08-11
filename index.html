@@ -39,6 +39,18 @@
         var sum = num1+num2
         document.getElementById("result").textContent="Result is :" + sum
 
+
+        function check(){
+        var rndnum = Math.float(10*Math.random())+1
+        var n1=document.getElementById("num1")
+        if(n1.value==rndnum){
+             document.getElementById("check").textContent="Your Answer is RIGHT!!"
+        }
+        else{
+            document.getElementById("check").textContent="Your Answer is WRONG..."
+        }
+        }   
+
     }
 
 </script>
@@ -54,17 +66,3 @@
 <button onclick="check()">Check</button>
 <h3 id="check"></h3>
 
-<script>
-
-    function check(){
-        var rndnum = Math.float(10*Math.random())+1
-        var n1=document.getElementById("num1")
-        if(n1.value==rndnum){
-             document.getElementById("check").textContent="Your Answer is RIGHT!!"
-        }
-       else{
-            document.getElementById("check").textContent="Your Answer is WRONG..."
-       }
-    }
-
-</script>
