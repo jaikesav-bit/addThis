@@ -49,6 +49,23 @@
 <br>
 
 <h1>Guess The Number</h1>
-<input type="number" id="nm1">
-<input type="submit">
-<h3></h3>
+<input type="number" id="num1">
+<button onclick="check()">Check</button>
+<h3 id="check"></h3>
+
+<script>
+
+    function check(){
+        var rndnum = Math.float(10*Math.random())+1
+        var n1=document.getElementById("num1")
+        if(n1.value==rndnum){
+             document.getElementById("check").textContent="Your Answer is RIGHT!!"
+        }
+       else{
+            document.getElementById("check").textContent="Your Answer is WRONG..."
+       }
+        
+
+    }
+
+</script>
