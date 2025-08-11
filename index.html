@@ -38,11 +38,11 @@
 <input type="number" id="num1">
 <button onclick="check()">Check</button>
 <h3 id="check"></h3>
+<h4 id="points">Your Points - 10</h4>
 
 <script>
 
     function add(){
-
         var inp1=document.getElementById("inp1")
         var num1=parseFloat(inp1.value)
         var inp2=document.getElementById("inp2")
@@ -51,14 +51,24 @@
         document.getElementById("result").textContent="Result is :" + sum
     }
 
-        function check(){
+    
+    function check(){
+        var points=10
         var rndnum = Math.floor(10*Math.random())+1
         var n1=document.getElementById("num1")
         if(n1.value==rndnum){
-             document.getElementById("check").textContent="Your Answer is RIGHT!!"
+            points=points+2
+            document.getElementById("check").textContent="Your Answer is RIGHT!!"
+            if(points>=10){
+                document.getElementById("points").textContent="Your Points - 10; You are doin GREAT!!!"
+            }else{
+                document.getElementById("points").textContent="Your Points - "+points
+            }
         }
         else{
+            points=points-1
             document.getElementById("check").textContent="Your Answer is WRONG..."
+            document.getElementById("points").textContent="Your Points - "+points
         }
     }   
 
