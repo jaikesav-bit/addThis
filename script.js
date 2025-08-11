@@ -17,6 +17,7 @@ function check(){
         document.getElementById("check").textContent="Your Answer is RIGHT!!"
         if(points>=10){
             document.getElementById("points").textContent="Your Points: 10; You are doin GREAT!!!"
+            document.getElementById("check").textContent="You Won"
         }else{
             document.getElementById("points").textContent="Your Points: "+points
         }
@@ -26,7 +27,8 @@ function check(){
         document.getElementById("check").textContent="Your Answer is WRONG..."
         document.getElementById("points").textContent="Your Points: "+points
         if(points<0){
-            document.getElementById("points").textContent="Your Points: 0; You Loose"
+            document.getElementById("points").textContent="Your Points: 0"
+            document.getElementById("check").textContent="You Loose"
         }else{
             document.getElementById("points").textContent="Your Points: "+points
         }
