@@ -14,23 +14,23 @@ function check(){
     var n1=document.getElementById("num1")
     if(n1.value==rndnum){
         points=points+2
-        document.getElementById("check").textContent="Your Answer is RIGHT!!"
         if(points>=10){
             document.getElementById("points").textContent="Your Points: 10; You are doin GREAT!!!"
             document.getElementById("check").textContent="You Won"
         }else{
             document.getElementById("points").textContent="Your Points: "+points
+            document.getElementById("check").textContent="Your Answer is RIGHT!!"
         }
     }
     else{
         points=points-1
-        document.getElementById("check").textContent="Your Answer is WRONG..."
         document.getElementById("points").textContent="Your Points: "+points
         if(points<0){
             document.getElementById("points").textContent="Your Points: 0"
             document.getElementById("check").textContent="You Loose"
         }else{
             document.getElementById("points").textContent="Your Points: "+points
+            document.getElementById("check").textContent="Your Answer is WRONG..."
         }
     }
 }   
